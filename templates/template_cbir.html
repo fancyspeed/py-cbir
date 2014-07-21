@@ -1,0 +1,55 @@
+{% extends "template_base.html" %}
+
+{% block head %}
+  <title>{{ escape("CBIR demo") }}</title>
+  <script>
+  </script>
+{% end %}
+
+{% block nav %}
+  <br>
+  <ul class="nav nav-pills">
+    <li><a href="/cbir">reset</a></li>
+  </ul>
+{% end %}
+
+{% block body %}
+  <h1 align="center">以图搜图演示程序</h1>
+  <div align="center">
+    <form action="/cbir" method="post" enctype="multipart/form-data">
+      <input type="file" class="span4" id="imppath" name="imgpath">
+      <button type="submit" class="btn btn-primary" id="upfile">Upload</button>
+    </form>
+  </div>
+  <div align="center" id="queryimg">
+    {% if imgpath %}
+    <img src="{{ imgpath }}" style="width:160px" class="img-polaroid">
+    {% end %}
+  </div>
+  <h2>{{ err_msg }}</h2>
+  <div class="span12">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        {% for i in range(len(lists)) %}
+          <div class="span3" id="resultlist{{ i }}">
+            {{ lists[i][0] }}:
+            {% for path, dist in lists[i][1] %}
+              <div>
+                <img src="{{ path }}" style="width:160px;heigth=120px" class="img-polaroid">
+                {{ dist }}
+              </div>
+            {% end %}
+          </div>
+          {% if i%6==3 %}
+      </div>
+      <div class="row-fluid">
+          {% end %}
+        {% end %}
+      </div>
+    </div>
+  </div>
+{% end %}
+
+{% block bottom %}
+{% end %}
+

@@ -1,0 +1,2 @@
+include *.txt
+recursive-include lear_gist README Makefile *.c *.h ar.ppm 

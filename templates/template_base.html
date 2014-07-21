@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+	  <link rel="stylesheet" href="{{ static_url("js/bootstrap.min.css") }}" />
+    <link rel="alternate" href="/feed" type="application/atom+xml" title="{{ escape(handler.settings["sitename"]) }}"/>
+    <script src="{{ static_url("js/jquery.js") }}" >
+    </script>
+    {% block head %}{% end %}
+  </head>
+  <body>
+    <div id="body">
+      <div id="header">
+	      {% block nav %}{% end %}
+      </div>
+      <div id="content">
+	      {% block body %}{% end %}
+	    </div>
+    </div>
+    {% block bottom %}{% end %}
+  </body>
+</html>
