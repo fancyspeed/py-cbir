@@ -18,7 +18,7 @@ import tornado.ioloop
 import traceback
 
 from urls import urls
-from settings import settings
+from settings import settings, demo_port
 
 import logging
 import logging.config
@@ -27,7 +27,7 @@ log_conf_file = os.path.join(cur_path, './conf/log.conf')
 logging.config.fileConfig(log_conf_file)
 ilog = logging.getLogger('root')
 
-define("port", default=19999, help="run one the given port", type=int)
+define("port", default=demo_port, help="run one the given port", type=int)
 
 def main():
     try:
