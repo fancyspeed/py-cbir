@@ -21,3 +21,18 @@ Demo of Content Based Image Retrieval, implemented by Python and Tornado.
 * blending: mix results
 * ensembling: weighted sum
 
+## Code structure
+
+* util/: feature descriptors, feature and lsh preparation
+* app/: http server, matching and retrieval
+* templates/: html templates
+* static/: datasets, js, css
+* conf: log.conf, and for feature data
+* logs: for log data
+* settings.py: http port, common setting 
+* urls.py: url path
+
+## Run
+
+* `python main.py`
+* access http://localhost:19999/cbir
