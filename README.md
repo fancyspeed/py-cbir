@@ -44,3 +44,8 @@ Demo of Content Based Image Retrieval, implemented by Python and Tornado.
 * `cd util && python prepare.py && cd -`
 * `python main.py`
 * access http://localhost:19999/cbir
+
+## Author
+
+Any question, please contact:  Zuotao Liu(zuotaoliu@126.com)
+
