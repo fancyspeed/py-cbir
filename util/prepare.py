@@ -57,9 +57,9 @@ def prepare_all(setname):
     prepare_local(dataset, sift2, LSH_sift, 'sift_lsh')
 
 if __name__ == '__main__':
-    dataset = 'simpcity'
-    dataset = 'infochimps'
+    #dataset = 'simpcity'
+    #dataset = 'infochimps'
     dataset = 'ferrari'
-    dataset = 'mixed'
+    #dataset = 'mixed'
     prepare_all(dataset)
 

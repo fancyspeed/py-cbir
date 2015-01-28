@@ -21,7 +21,7 @@ from lsh import LSH_hog, LSH_sift
 from rerank import blending, ensembling
 
 upload_prefix = './static/upload/'
-SETNAME = 'mixed'
+SETNAME = 'ferrari'
 
 class LocalMatcher(object):
     def __init__(self, setname):

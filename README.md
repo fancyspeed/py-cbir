@@ -32,7 +32,14 @@ Demo of Content Based Image Retrieval, implemented by Python and Tornado.
 * settings.py: http port, common setting 
 * urls.py: url path
 
-## Run
+## Dependency
 
-* `python main.py`
+* tornado
+* Image
+* numpy, scipy
+
+## Run (Linux or Mac)
+
+* `cd util && python prepare.py`
+* `cd - && python main.py`
 * access http://localhost:19999/cbir
