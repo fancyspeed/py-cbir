@@ -41,6 +41,6 @@ Demo of Content Based Image Retrieval, implemented by Python and Tornado.
 ## Run (Linux or Mac)
 
 * `cd util/pyleargist-2.0.5/lear_gist/ && make && cp compute_gist ../../ && cd -`
-* `cd util && python prepare.py`
-* `cd - && python main.py`
+* `cd util && python prepare.py && cd -`
+* `python main.py`
 * access http://localhost:19999/cbir
