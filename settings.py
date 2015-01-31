@@ -16,9 +16,4 @@ settings = {
 }
 
 db = {
-	#"host": sae.const.MYSQL_HOST,
-	#"port": sae.const.MYSQL_PORT,
-	#"db": sae.const.MYSQL_DB,
-	#"user": sae.const.MYSQL_USER,
-	#"password": sae.const.MYSQL_PASS,
 }
