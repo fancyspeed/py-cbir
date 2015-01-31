@@ -2,19 +2,19 @@ Demo of Content Based Image Retrieval, implemented by Python and Tornado.
 
 ## Image descriptors
 
-* perceptual hash, otsu hash
-* gray/rgb/yuv/hsv histograms
+* perceptual hash
+* Otsu's method
+* gray/RGB/YUV/HSV histograms
 * GIST
-* HoG and LSH (built by kmeans clustering)
-* SIFT and LSH (built by kmeans clustering)
+* HoG and LSH (built by Kmeans clustering)
+* SIFT and LSH (built by Kmeans clustering)
 * Dense SIFT
 
 ## Distance functions
 
-* hamming distance (L0)
-* norm0 distance (L0)
+* Hamming distance, or norm0 distance (L0)
 * abs distance (L1)
-* eculidean distance (L2)
+* Eculidean distance (L2)
 
 ## Simple re-ranking
 
@@ -23,18 +23,18 @@ Demo of Content Based Image Retrieval, implemented by Python and Tornado.
 
 ## Code structure
 
-* util/: feature descriptors, feature and lsh preparation
-* app/: http server, matching and retrieval
-* templates/: html templates
-* static/: datasets, js, css
-* conf: log.conf, and for feature data
-* logs: for log data
-* settings.py: http port, common setting 
-* urls.py: url path
+* util/:  feature descriptors, feature and lsh preparation
+* app/:  http server, matching and retrieval
+* templates/:  html templates
+* static/:  datasets, js, css
+* conf:  log.conf, and for feature data
+* logs:  for log data
+* settings.py:  http port, common setting 
+* urls.py:  server url path
 
-## Dependency
+## Dependencies
 
-* tornado
+* Tornado
 * Image
 * numpy, scipy
 

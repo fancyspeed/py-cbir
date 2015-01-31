@@ -2,7 +2,7 @@
 # coding: utf-8
 import os.path
 
-demo_port=19999
+demo_port = 19999
 
 settings = {
 	"sitename": "CBIR demo",
