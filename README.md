@@ -23,12 +23,12 @@ Demo of Content Based Image Retrieval, implemented by Python and Tornado.
 
 ## Code structure
 
-* util/:  feature descriptors, feature and lsh preparation
+* util/:  feature descriptors, feature and LSH preparation
 * app/:  http server, matching and retrieval
 * templates/:  html templates
 * static/:  datasets, js, css
-* conf:  log.conf, and for feature data
-* logs:  for log data
+* conf/:  log.conf, and for feature data
+* logs/:  for log data
 * settings.py:  http port, common setting 
 * urls.py:  server url path
 
