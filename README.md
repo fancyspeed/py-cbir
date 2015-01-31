@@ -45,6 +45,12 @@ Demo of Content Based Image Retrieval, implemented by Python and Tornado.
 * `python main.py`
 * access http://localhost:19999/cbir
 
+## How to change dataset
+
+* add a new image folder in static/dataset/
+* in util/prepare.py, change dataset to the folder name, like `dataset = 'ferrari'` 
+* run as previous section 
+
 ## Author
 
 Any question, please contact:  Zuotao Liu(zuotaoliu@126.com)
