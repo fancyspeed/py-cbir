@@ -20,7 +20,7 @@ standalone_image.o: standalone_image.c standalone_image.h
 	gcc -c -Wall -g $< 
 
 compute_gist: compute_gist.c gist.o standalone_image.o
-	gcc -Wall -g -o $@ $^ $(WFFTLIB) -lfftw3f
+	gcc -Wall -g -o $@ $^ $(WFFTLIB) -lfftw3f -lm
 
 
 
